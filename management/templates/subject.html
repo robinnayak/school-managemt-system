@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+create subject
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form}}
+        <button type="submit">register</button> 
+    </form>
+    
+{% endblock %}

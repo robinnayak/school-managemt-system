@@ -1,0 +1,15 @@
+{% extends "../base.html" %}
+
+{% block content %}
+    teacher profile page
+    <div>
+        username : {{teacher.user.username}}
+        <br>
+        name : {{teacher.name}}
+        <br>
+        email : {{teacher.email}}
+        <br>
+    </div>
+    <a href="{% url 'management:update_teacher_profile' %}">update profile</a>
+{% endblock content %}
+
